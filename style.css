@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:300");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700");
 h1, h2, h3, h4, ul, li {
   margin: 0;
   padding: 0; }
 
 body {
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'Nunito Sans', sans-serif; }
 
 /******************************************************************
   NAVIGATION
@@ -56,29 +56,50 @@ nav.navbar-default {
 
 .banner-group .banner-image {
   position: relative;
-  height: 200px; }
+  height: 160px; }
   .banner-group .banner-image img {
     width: 100%;
     height: 100%;
     object-fit: cover; }
   .banner-group .banner-image .image-overlay {
     position: absolute;
-    background-color: rgba(196, 170, 109, 0.6);
-    padding: 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     color: #F7F7F7;
     font-weight: bold;
-    letter-spacing: 2px;
     white-space: nowrap; }
-  .banner-group .banner-image h3 {
-    margin-bottom: 10px; }
+    .banner-group .banner-image .image-overlay h3 {
+      text-transform: uppercase;
+      width: 100%;
+      font-weight: normal;
+      letter-spacing: 5px;
+      margin-bottom: 10px; }
+  .banner-group .banner-image i[class*="icon"] {
+    font-size: 5rem; }
+  .banner-group .banner-image.cost h3 {
+    margin-bottom: 25px; }
+  .banner-group .banner-image.cost i[class="icon-money"] {
+    font-size: 3rem;
+    border: 5px solid white;
+    border-radius: 100%; }
+  .banner-group .banner-image:first-of-type {
+    height: 200px; }
+    .banner-group .banner-image:first-of-type .image-overlay {
+      background-color: rgba(196, 170, 109, 0.6);
+      padding: 10px;
+      letter-spacing: 2px; }
+    .banner-group .banner-image:first-of-type h3 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 0; }
 .banner-group .banner-info {
-  margin: 10px 0;
   padding: 20px;
   background-color: #F7F7F7; }
+  .banner-group .banner-info.space {
+    margin: 10px 0; }
+.banner-group .banner-info:nth-child(1) {
+  background-color: red !important; }
 
 /* Mobile first queries */
 /* Larger than mobile */
