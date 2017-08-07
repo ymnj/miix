@@ -1,4 +1,3 @@
-
 <?php 
 
 /*
@@ -37,9 +36,11 @@ add_action( 'wp_enqueue_scripts', 'main_assets' );
   ===================================================
 */
 
+require_once('wp-bootstrap-navwalker.php');
+
 function register_my_menu() {
-  register_nav_menu('main-menu',__( 'Main Menu' ));
+  register_nav_menu('navigation-menu',__( 'Navigation Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
 
-
+?>
