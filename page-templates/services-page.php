@@ -69,40 +69,43 @@
     </p>
   </article>
 
-  <article class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <header>
-        <h2>Interior Design </h2>
-        </header>
-        <section>
-          <ul>
-            <li>Concept development</li>
-            <li>Professional consultation</li>
-            <li>Builders/architects/trades collaboration</li>
-            <li>Design + drawings</li>
-            <li>Interior design construction drawings</li>
-            <li>Fixtures + finishes specifications</li>
-          </ul>
-        </section>
+  <div class="back-color-wrap">
+    <article class="container design-decor2">
+      <div class="row">
+        <div class="col-sm-6">
+          <header>
+          <h2>Interior Design </h2>
+          </header>
+          <section>
+            <ul>
+              <li>Concept development</li>
+              <li>Professional consultation</li>
+              <li>Builders/architects/trades collaboration</li>
+              <li>Design + drawings</li>
+              <li>Interior design construction drawings</li>
+              <li>Fixtures + finishes specifications</li>
+            </ul>
+          </section>
+        </div>
+        <div class="col-sm-6">
+          <header>
+          <h2>Interior Decor</h2>
+          </header>
+          <section>
+            <ul>
+              <li>Concept development</li>
+              <li>Space planning</li>
+              <li>Budget control</li>
+              <li>Furniture + Accessories sourcing</li>
+              <li>Furniture + Accessories purchase</li>
+              <li>Design + Display</li>
+            </ul>
+          </section>
+        </div>
       </div>
-      <div class="col-sm-6">
-        <header>
-        <h2>Interior Decor</h2>
-        </header>
-        <section>
-          <ul>
-            <li>Concept development</li>
-            <li>Space planning</li>
-            <li>Budget control</li>
-            <li>Furniture + Accessories sourcing</li>
-            <li>Furniture + Accessories purchase</li>
-            <li>Design + Display</li>
-          </ul>
-        </section>
-      </div>
-    </div>
-  </article>
+      <a href=""><h3>View Our Projects</h3></a>
+    </article>
+  <div class="back-color-wrap">
 </div>
 
 <?php get_footer(); ?>

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700|Old+Standard+TT:400i|Quicksand:300");
 html, body {
   font-size: 14px;
+  font-weight: 300;
   font-family: "Nunito Sans", sans-serif; }
 
 h1, h2, h3, h4, ul, li {
@@ -222,15 +223,78 @@ footer.social {
 .services-page .back-color-wrap {
   background-color: #DFEEF0; }
 .services-page article {
+  padding-top: 30px;
   text-align: left; }
   .services-page article:nth-child(odd) {
-    background-color: #DFEEF0; }
+    background-color: #DFEEF0;
+    text-transform: capitalize; }
+  .services-page article h3 {
+    text-align: center;
+    padding: 8px;
+    font-size: 0.857rem;
+    border: 1px solid black; }
+  .services-page article.design-decor2 {
+    padding-bottom: 30px; }
+    .services-page article.design-decor2 a {
+      color: black;
+      text-decoration: none; }
+      .services-page article.design-decor2 a:hover {
+        color: #c4aa6d; }
 .services-page header h2 {
   text-transform: uppercase;
   font-size: 0.928rem; }
 .services-page section {
-  font-size: 0.8rem;
+  font-size: 0.928rem;
   margin: 30px 0; }
+  .services-page section ul {
+    padding-left: 15px; }
+
+.contact-page h1 {
+  margin: 20px auto;
+  text-transform: uppercase;
+  font-size: 1.425rem;
+  font-weight: normal;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 15px;
+  letter-spacing: 4px; }
+.contact-page .contact-info {
+  text-align: left;
+  font-size: 0.928rem;
+  margin: 30px 0; }
+.contact-page .contact-list {
+  text-align: left; }
+  .contact-page .contact-list ul {
+    margin-left: -5px;
+    list-style-type: none; }
+    .contact-page .contact-list ul li {
+      padding: 10px 0; }
+      .contact-page .contact-list ul li span {
+        padding-left: 36px; }
+      .contact-page .contact-list ul li i {
+        margin-right: 10px;
+        font-size: 1.4rem; }
+      .contact-page .contact-list ul li .icon-location {
+        position: relative;
+        top: 10px; }
+.contact-page #map {
+  width: 100%;
+  height: 200px;
+  background-color: grey; }
+  .contact-page #map iframe {
+    width: 100%;
+    height: 100%; }
+.contact-page .contact-form {
+  padding: 20px 0; }
+  .contact-page .contact-form .form-group, .contact-page .contact-form input, .contact-page .contact-form textarea, .contact-page .contact-form button {
+    margin: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; }
+  .contact-page .contact-form button {
+    margin: 10px; }
+    .contact-page .contact-form button:hover {
+      background-color: #fff; }
 
 /* Mobile first queries */
 /* Larger than mobile */

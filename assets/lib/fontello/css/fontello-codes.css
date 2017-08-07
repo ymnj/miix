@@ -4,6 +4,8 @@
 .icon-ok-circled2:before { content: '\e802'; } /* '' */
 .icon-money:before { content: '\e803'; } /* '' */
 .icon-phone:before { content: '\e804'; } /* '' */
+.icon-location:before { content: '\e805'; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-facebook-official:before { content: '\f230'; } /* '' */
 .icon-houzz:before { content: '\f27c'; } /* '' */
