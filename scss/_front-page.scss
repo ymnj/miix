@@ -88,7 +88,7 @@ nav.navbar-default {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
       text-transform: uppercase;
       color: $light-grey;
       font-weight: bold;

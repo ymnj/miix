@@ -121,7 +121,7 @@ nav.navbar-default {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     text-transform: uppercase;
     color: #F7F7F7;
     font-weight: bold;
@@ -248,6 +248,17 @@ footer.social {
   margin: 30px 0; }
   .services-page section ul {
     padding-left: 15px; }
+
+.portfolio-page blockquote {
+  text-align: left;
+  font-size: 1rem;
+  color: black;
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  margin: 20px auto 10px; }
+  .portfolio-page blockquote div, .portfolio-page blockquote p {
+    margin-bottom: 10px; }
 
 .contact-page h1 {
   margin: 20px auto;

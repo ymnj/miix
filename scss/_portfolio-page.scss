@@ -1,0 +1,16 @@
+.portfolio-page {
+  
+  blockquote {
+    text-align: left;
+    font-size: 1rem;
+    color: black;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    margin: 20px auto 10px;
+
+    div, p {
+      margin-bottom: 10px;
+    }
+  }
+}
