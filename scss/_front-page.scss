@@ -35,10 +35,12 @@ nav.navbar-default {
 
 #mainCarousel {
   .carousel-inner {
-    height: 210px;
+    //max height can be set if images are the same px size.
+    // max-height: 300px;
+    height: 300px;
     img {
       width: 100%; /* Adhere to container width. */
-      height: 210px; 
+      height: 300px; 
       object-fit: cover;
     }
   }
@@ -77,10 +79,12 @@ nav.navbar-default {
 .banner-group {
   .banner-image {
     position: relative;
-    height: 160px;
+    transition: all 600ms ease;
+    height: 200px;//160 min
     img {
       width: 100%;
       height: 100%;
+      display: block;
       object-fit: cover;
     }
 
@@ -123,7 +127,7 @@ nav.navbar-default {
 
     //First Main Banner
     &:first-of-type {
-      height: 200px;
+      //height: 200px;
       .image-overlay {  
         background-color: rgba(196, 170, 109, 0.6);
         padding: 10px;

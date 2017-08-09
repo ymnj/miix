@@ -82,11 +82,11 @@ nav.navbar-default {
   CAROUSEL
 *******************************************************************/
 #mainCarousel .carousel-inner {
-  height: 210px; }
+  height: 300px; }
   #mainCarousel .carousel-inner img {
     width: 100%;
     /* Adhere to container width. */
-    height: 210px;
+    height: 300px;
     object-fit: cover; }
 #mainCarousel .carousel-indicators li {
   width: 5px;
@@ -112,10 +112,12 @@ nav.navbar-default {
 
 .banner-group .banner-image {
   position: relative;
-  height: 160px; }
+  transition: all 600ms ease;
+  height: 200px; }
   .banner-group .banner-image img {
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover; }
   .banner-group .banner-image .image-overlay {
     position: absolute;
@@ -144,15 +146,13 @@ nav.navbar-default {
     font-size: 3rem;
     border: 7px solid white;
     border-radius: 50%; }
-  .banner-group .banner-image:first-of-type {
-    height: 200px; }
-    .banner-group .banner-image:first-of-type .image-overlay {
-      background-color: rgba(196, 170, 109, 0.6);
-      padding: 10px;
-      letter-spacing: 2px; }
-    .banner-group .banner-image:first-of-type h3 {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 0; }
+  .banner-group .banner-image:first-of-type .image-overlay {
+    background-color: rgba(196, 170, 109, 0.6);
+    padding: 10px;
+    letter-spacing: 2px; }
+  .banner-group .banner-image:first-of-type h3 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0; }
 .banner-group .banner-info {
   font-size: 0.875;
   font-family: 'Quicksand', sans-serif;
@@ -309,24 +309,29 @@ footer.social {
 
 /* Mobile first queries */
 /* Larger than mobile */
-@media (min-width: 400px) {
-  .top-banner {
-    height: 350px; } }
 /* Larger than phablet */
 @media (min-width: 550px) {
-  .top-banner {
-    height: 500px; } }
+  body {
+    background-color: red; }
+    body #mainCarousel .carousel-inner,
+    body #mainCarousel .carousel-inner img {
+      transition: all 600ms ease;
+      height: 350px; }
+    body .banner-group .banner-image {
+      height: 300px; }
+    body .banner-info {
+      text-align: center; } }
 /* Larger than tablet */
 @media (min-width: 750px) {
-  .top-banner {
-    height: 650px; } }
+  body {
+    background-color: blue; } }
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  .top-banner {
-    height: 800px; } }
+  body {
+    background-color: green; } }
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-  .top-banner {
-    height: 1200px; } }
+  body {
+    background-color: purple; } }
 
 /*# sourceMappingURL=style.css.map */
