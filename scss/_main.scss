@@ -19,7 +19,7 @@ $font-helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue"
 html, body {
   font-size: 14px;
   font-weight: 300;
-  font-family: $font-nunito
+  font-family: $font-nunito;
 }
 
 h1,h2,h3,h4, ul, li {
@@ -28,4 +28,67 @@ h1,h2,h3,h4, ul, li {
 }
 
 
+/******************************************************************
+  NAVIGATION
+*******************************************************************/
+nav.navbar-default {
+  background-color: $dark-grey;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+
+  .navbar-nav>li>a, .navbar-nav>li>a:hover   {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav>.active>a, .navbar-nav>.active>a:focus, .navbar-nav>.active>a:hover {
+    background-color: #fff;
+  }
+
+  .navbar-collapse {
+    border: none;
+    box-shadow: none;
+  }
+
+  .navbar-brand { 
+      padding: 0;
+    img {
+      height: 100%;
+    }
+  }
+}
+
+
+/******************************************************************
+  FOOTER
+*******************************************************************/
+footer.social {
+  padding: 20px 0;
+  background-color: #404040; 
+  color: $light-grey;
+  h2 {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 1.357rem;
+    letter-spacing: 3px;
+  }
+  .social-icons {
+    li {
+      display: inline-block;
+    }
+    i {
+      font-size: 2rem;
+      margin: auto 5px;
+    }
+    a {
+      color: $light-grey;
+    }
+    a:hover {
+      color: #c4aa6d;
+    }
+  }
+}
 

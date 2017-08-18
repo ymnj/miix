@@ -8,20 +8,29 @@
 /* Larger than phablet */
 @media (min-width: 550px) {
   body {
-    background-color: red;
-
+    transition: all 600ms ease;
     #mainCarousel .carousel-inner,
     #mainCarousel .carousel-inner img {
-     transition: all 600ms ease;
      height: 350px;
     }
+    .banner-group {
+      .banner-image {
+        height: 300px;
+      }
+      .banner-info {
+        padding: 20px 40px;
+        &.space {
 
-    .banner-group .banner-image {
-      height: 300px;
+          margin: 20px 0;
+        }
+      }
     }
-
-    .banner-info {
-      text-align: center;
+    .intro-component {
+      margin: 20px 0;
+      padding: 20px 15%;
+      .text-box {
+        padding: 28px 15px;
+      }
     }
   }
 }
@@ -29,20 +38,96 @@
 /* Larger than tablet */
 @media (min-width: 750px) {
   body {
-    background-color: blue;
+    
+    #mainCarousel .carousel-inner,
+    #mainCarousel .carousel-inner img {
+     height: 550px;
+    }
+
+    .banner-group {
+      .banner-image {
+      height: 500px;
+      }
+
+      .banner-info p {      
+        margin: 20px auto;       
+      }
+    }
   }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+
+  html, body {
+    font-size: 14.5px;
+  }
+
   body {
-    background-color: green;
+    .intro-component {
+      margin: 20px 0;
+      padding: 20px 30%;
+      .text-box {
+        padding: 28px 15px;
+      }
+    }
+    
+    //First Main Banner
+    .banner-group .banner-image { 
+      .image-overlay {
+        h3 {
+          transition: all 600ms ease;
+          font-size: 1.75rem;
+        }
+      }
+  
+      &:first-of-type {
+        .image-overlay {
+          padding: 20px 60px;
+          letter-spacing: 2px;
+        }
+        h3 {
+          padding: 5px 10px;
+        }
+      }
+    }
+
+    .banner-group .banner-info {
+      p {
+        margin: 40px auto;
+      }
+    }
+  
+    footer.social .social-icons i {
+      transition: all 600ms ease;
+      margin: auto 20px;
+    }
   }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
+
+  html, body {
+    font-size: 15px;
+  }
+
   body {
-    background-color: purple;
+
+    #mainCarousel .carousel-inner,
+    #mainCarousel .carousel-inner img {
+     height: 750px;
+    }
+
+    .banner-group .banner-image {
+      height: 700px;
+    }
+
+    .banner-group .banner-info {
+      p {
+        line-height: 1.5rem;
+        margin: 60px auto;
+      }
+    }
   }
 }

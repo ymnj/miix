@@ -1,33 +1,4 @@
 
-/******************************************************************
-  NAVIGATION
-*******************************************************************/
-nav.navbar-default {
-  background-color: $dark-grey;
-  margin-bottom: 0;
-  border: none;
-  border-radius: 0;
-
-  .navbar-nav>li>a, .navbar-nav>li>a:hover   {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 1.2rem;
-  }
-
-  .navbar-collapse {
-    border: none;
-    box-shadow: none;
-  }
-
-  .navbar-brand { 
-      padding: 0;
-    img {
-      height: 100%;
-    }
-  }
-}
-
 
 /******************************************************************
   CAROUSEL
@@ -59,14 +30,16 @@ nav.navbar-default {
 
 .intro-component {
   margin: 10px 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 5%;
   background-color: $light-grey;
+  transition: all 600ms ease;
 
   .text-box {
     border: 1px solid black;
     padding: 28px 15px;
+    text-align: center;
     h2 {
+    display: inline-block;
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -98,6 +71,7 @@ nav.navbar-default {
       font-weight: bold;
       white-space: nowrap;
        h3 {
+        transition: all 600ms ease;
         text-transform: uppercase;
         width: 100%;
         font-weight: 300;
@@ -114,6 +88,20 @@ nav.navbar-default {
       font-size: 5rem;
     }
 
+    //First Main Banner
+    &:first-of-type {
+      .image-overlay {  
+        transition: all 600ms ease;
+        background-color: rgba(196, 170, 109, 0.6);
+        padding: 10px;
+        letter-spacing: 2px;
+      }
+      h3 {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 0;
+      }
+    }
+
     &.cost {
       h3 {
         margin-bottom: 25px;
@@ -124,58 +112,25 @@ nav.navbar-default {
         border-radius: 50%;
       }
     }
-
-    //First Main Banner
-    &:first-of-type {
-      //height: 200px;
-      .image-overlay {  
-        background-color: rgba(196, 170, 109, 0.6);
-        padding: 10px;
-        letter-spacing: 2px;
-      }
-      h3 {
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 0;
-      }
-
-    }
   }
 
   .banner-info {
-    font-size: 0.875;
+    transition: padding 600ms ease;
+    font-size: 0.875rem;
     font-family: 'Quicksand', sans-serif;
     padding: 20px;
     background-color: $light-grey;
 
+    p {
+      max-width: 400px;
+      margin: 0 auto 10px;
+    }
+
     &.space {
        margin: 10px 0;
-    }
-  }
-}
-
-footer.social {
-  padding: 20px 0;
-  background-color: #404040; 
-  color: $light-grey;
-  h2 {
-    padding-bottom: 10px;
-    text-transform: uppercase;
-    font-size: 1.357rem;
-    letter-spacing: 3px;
-  }
-  .social-icons {
-    li {
-      display: inline-block;
-    }
-    i {
-      font-size: 2rem;
-      margin: 5px;
-    }
-    a {
-      color: $light-grey;
-    }
-    a:hover {
-      color: #c4aa6d;
+       p {
+        max-width: 900px;
+       }
     }
   }
 }

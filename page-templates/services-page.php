@@ -103,7 +103,9 @@
           </section>
         </div>
       </div>
-      <a href=""><h3>View Our Projects</h3></a>
+      <div class="view-proj-btn">
+        <a href=""><h3>View Our Projects</h3></a>
+      </div>
     </article>
   <div class="back-color-wrap">
 </div>

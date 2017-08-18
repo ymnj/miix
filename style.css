@@ -8,6 +8,51 @@ h1, h2, h3, h4, ul, li {
   margin: 0;
   padding: 0; }
 
+/******************************************************************
+  NAVIGATION
+*******************************************************************/
+nav.navbar-default {
+  background-color: #000015;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0; }
+  nav.navbar-default .navbar-nav > li > a, nav.navbar-default .navbar-nav > li > a:hover {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.2rem; }
+  nav.navbar-default .navbar-nav > .active > a, nav.navbar-default .navbar-nav > .active > a:focus, nav.navbar-default .navbar-nav > .active > a:hover {
+    background-color: #fff; }
+  nav.navbar-default .navbar-collapse {
+    border: none;
+    box-shadow: none; }
+  nav.navbar-default .navbar-brand {
+    padding: 0; }
+    nav.navbar-default .navbar-brand img {
+      height: 100%; }
+
+/******************************************************************
+  FOOTER
+*******************************************************************/
+footer.social {
+  padding: 20px 0;
+  background-color: #404040;
+  color: #F7F7F7; }
+  footer.social h2 {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 1.357rem;
+    letter-spacing: 3px; }
+  footer.social .social-icons li {
+    display: inline-block; }
+  footer.social .social-icons i {
+    font-size: 2rem;
+    margin: auto 5px; }
+  footer.social .social-icons a {
+    color: #F7F7F7; }
+  footer.social .social-icons a:hover {
+    color: #c4aa6d; }
+
 /*
   Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
   CSS from:       http://codepen.io/transportedman/pen/NPWRGq
@@ -58,27 +103,6 @@ h1, h2, h3, h4, ul, li {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
 /******************************************************************
-  NAVIGATION
-*******************************************************************/
-nav.navbar-default {
-  background-color: #000015;
-  margin-bottom: 0;
-  border: none;
-  border-radius: 0; }
-  nav.navbar-default .navbar-nav > li > a, nav.navbar-default .navbar-nav > li > a:hover {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 1.2rem; }
-  nav.navbar-default .navbar-collapse {
-    border: none;
-    box-shadow: none; }
-  nav.navbar-default .navbar-brand {
-    padding: 0; }
-    nav.navbar-default .navbar-brand img {
-      height: 100%; }
-
-/******************************************************************
   CAROUSEL
 *******************************************************************/
 #mainCarousel .carousel-inner {
@@ -98,13 +122,15 @@ nav.navbar-default {
 
 .intro-component {
   margin: 10px 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #F7F7F7; }
+  padding: 10px 5%;
+  background-color: #F7F7F7;
+  transition: all 600ms ease; }
   .intro-component .text-box {
     border: 1px solid black;
-    padding: 28px 15px; }
+    padding: 28px 15px;
+    text-align: center; }
     .intro-component .text-box h2 {
+      display: inline-block;
       font-weight: 300;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -129,6 +155,7 @@ nav.navbar-default {
     font-weight: bold;
     white-space: nowrap; }
     .banner-group .banner-image .image-overlay h3 {
+      transition: all 600ms ease;
       text-transform: uppercase;
       width: 100%;
       font-weight: 300;
@@ -140,45 +167,33 @@ nav.navbar-default {
       font-weight: 300; }
   .banner-group .banner-image i[class*="icon"] {
     font-size: 5rem; }
-  .banner-group .banner-image.cost h3 {
-    margin-bottom: 25px; }
-  .banner-group .banner-image.cost i[class="icon-money"] {
-    font-size: 3rem;
-    border: 7px solid white;
-    border-radius: 50%; }
   .banner-group .banner-image:first-of-type .image-overlay {
+    transition: all 600ms ease;
     background-color: rgba(196, 170, 109, 0.6);
     padding: 10px;
     letter-spacing: 2px; }
   .banner-group .banner-image:first-of-type h3 {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0; }
+  .banner-group .banner-image.cost h3 {
+    margin-bottom: 25px; }
+  .banner-group .banner-image.cost i[class="icon-money"] {
+    font-size: 3rem;
+    border: 7px solid white;
+    border-radius: 50%; }
 .banner-group .banner-info {
-  font-size: 0.875;
+  transition: padding 600ms ease;
+  font-size: 0.875rem;
   font-family: 'Quicksand', sans-serif;
   padding: 20px;
   background-color: #F7F7F7; }
+  .banner-group .banner-info p {
+    max-width: 400px;
+    margin: 0 auto 10px; }
   .banner-group .banner-info.space {
     margin: 10px 0; }
-
-footer.social {
-  padding: 20px 0;
-  background-color: #404040;
-  color: #F7F7F7; }
-  footer.social h2 {
-    padding-bottom: 10px;
-    text-transform: uppercase;
-    font-size: 1.357rem;
-    letter-spacing: 3px; }
-  footer.social .social-icons li {
-    display: inline-block; }
-  footer.social .social-icons i {
-    font-size: 2rem;
-    margin: 5px; }
-  footer.social .social-icons a {
-    color: #F7F7F7; }
-  footer.social .social-icons a:hover {
-    color: #c4aa6d; }
+    .banner-group .banner-info.space p {
+      max-width: 900px; }
 
 .about-page h1 {
   margin: 20px auto;
@@ -228,7 +243,7 @@ footer.social {
   .services-page article:nth-child(odd) {
     background-color: #DFEEF0;
     text-transform: capitalize; }
-  .services-page article h3 {
+  .services-page article .view-proj-btn h3 {
     text-align: center;
     padding: 8px;
     font-size: 0.857rem;
@@ -312,26 +327,65 @@ footer.social {
 /* Larger than phablet */
 @media (min-width: 550px) {
   body {
-    background-color: red; }
+    transition: all 600ms ease; }
     body #mainCarousel .carousel-inner,
     body #mainCarousel .carousel-inner img {
-      transition: all 600ms ease;
       height: 350px; }
     body .banner-group .banner-image {
       height: 300px; }
-    body .banner-info {
-      text-align: center; } }
+    body .banner-group .banner-info {
+      padding: 20px 40px; }
+      body .banner-group .banner-info.space {
+        margin: 20px 0; }
+    body .intro-component {
+      margin: 20px 0;
+      padding: 20px 15%; }
+      body .intro-component .text-box {
+        padding: 28px 15px; } }
 /* Larger than tablet */
 @media (min-width: 750px) {
-  body {
-    background-color: blue; } }
+  body #mainCarousel .carousel-inner,
+  body #mainCarousel .carousel-inner img {
+    height: 550px; }
+  body .banner-group .banner-image {
+    height: 500px; }
+  body .banner-group .banner-info p {
+    margin: 20px auto; } }
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  body {
-    background-color: green; } }
+  html, body {
+    font-size: 14.5px; }
+
+  body .intro-component {
+    margin: 20px 0;
+    padding: 20px 30%; }
+    body .intro-component .text-box {
+      padding: 28px 15px; }
+  body .banner-group .banner-image .image-overlay h3 {
+    transition: all 600ms ease;
+    font-size: 1.75rem; }
+  body .banner-group .banner-image:first-of-type .image-overlay {
+    padding: 20px 60px;
+    letter-spacing: 2px; }
+  body .banner-group .banner-image:first-of-type h3 {
+    padding: 5px 10px; }
+  body .banner-group .banner-info p {
+    margin: 40px auto; }
+  body footer.social .social-icons i {
+    transition: all 600ms ease;
+    margin: auto 20px; } }
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-  body {
-    background-color: purple; } }
+  html, body {
+    font-size: 15px; }
+
+  body #mainCarousel .carousel-inner,
+  body #mainCarousel .carousel-inner img {
+    height: 750px; }
+  body .banner-group .banner-image {
+    height: 700px; }
+  body .banner-group .banner-info p {
+    line-height: 1.5rem;
+    margin: 60px auto; } }
 
 /*# sourceMappingURL=style.css.map */

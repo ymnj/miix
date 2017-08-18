@@ -3,26 +3,65 @@
 /* Larger than phablet */
 @media (min-width: 550px) {
   body {
-    background-color: red; }
+    transition: all 600ms ease; }
     body #mainCarousel .carousel-inner,
     body #mainCarousel .carousel-inner img {
-      transition: all 600ms ease;
       height: 350px; }
     body .banner-group .banner-image {
       height: 300px; }
-    body .banner-info {
-      text-align: center; } }
+    body .banner-group .banner-info {
+      padding: 20px 40px; }
+      body .banner-group .banner-info.space {
+        margin: 20px 0; }
+    body .intro-component {
+      margin: 20px 0;
+      padding: 20px 15%; }
+      body .intro-component .text-box {
+        padding: 28px 15px; } }
 /* Larger than tablet */
 @media (min-width: 750px) {
-  body {
-    background-color: blue; } }
+  body #mainCarousel .carousel-inner,
+  body #mainCarousel .carousel-inner img {
+    height: 550px; }
+  body .banner-group .banner-image {
+    height: 500px; }
+  body .banner-group .banner-info p {
+    margin: 20px auto; } }
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  body {
-    background-color: green; } }
+  html, body {
+    font-size: 14.5px; }
+
+  body .intro-component {
+    margin: 20px 0;
+    padding: 20px 30%; }
+    body .intro-component .text-box {
+      padding: 28px 15px; }
+  body .banner-group .banner-image .image-overlay h3 {
+    transition: all 600ms ease;
+    font-size: 1.75rem; }
+  body .banner-group .banner-image:first-of-type .image-overlay {
+    padding: 20px 60px;
+    letter-spacing: 2px; }
+  body .banner-group .banner-image:first-of-type h3 {
+    padding: 5px 10px; }
+  body .banner-group .banner-info p {
+    margin: 40px auto; }
+  body footer.social .social-icons i {
+    transition: all 600ms ease;
+    margin: auto 20px; } }
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-  body {
-    background-color: purple; } }
+  html, body {
+    font-size: 15px; }
+
+  body #mainCarousel .carousel-inner,
+  body #mainCarousel .carousel-inner img {
+    height: 750px; }
+  body .banner-group .banner-image {
+    height: 700px; }
+  body .banner-group .banner-info p {
+    line-height: 1.5rem;
+    margin: 60px auto; } }
 
 /*# sourceMappingURL=media.css.map */
